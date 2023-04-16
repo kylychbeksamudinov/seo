@@ -1,0 +1,33 @@
+.parallax {
+  background-image: url(https://cdn.pixabay.com/photo/2016/07/23/10/51/binary-1536651__340.jpg);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body::before {
+  display: block;
+  content: "";
+  height: 60px;
+}
+
+@media (min-widht: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .back-video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    width: auto;
+    height: 100%;
+  }
+}
